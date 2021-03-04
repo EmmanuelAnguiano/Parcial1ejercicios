@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <body>
+            <h1>VER FUNCIONAR GITUB</h1>
+           <p>Hola mundo</p>
+           <script>
+               function calar(){
+                let n1=prompt('nombre: ');
+                n2='hola'+'  '+n1;
+               }
+               document.write(n2);
+           </script>
+           <button onclick="calar()"></button>
+        </body>
+    </head>
+</html>
