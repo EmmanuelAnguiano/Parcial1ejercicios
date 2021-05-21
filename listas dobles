@@ -1,0 +1,53 @@
+class Alumno{
+    constructor (nombre, numeroCuenta, promedio){
+        this.nombre=nombre;
+        this.numeroCuenta=numeroCuenta;
+        this.promedio=promedio;
+        this.semestre=1;
+        this.siguiente=null;
+        this.anterior=null;
+    }
+    info(){
+        return "<h3>" + this.nombre + "</h3>" +
+               "<p>" + this.numeroCuenta + 
+               ":::  Promedio= " + this.promedio + "<br>" +
+               "semestre= " + this.semestre + "</p>";
+    }
+}
+
+let Inicio
+
+agregar(nuevo)
+if (inicio == null)
+  inicio=nuevo
+else
+  t=inicio
+  while(t.siguiente!=null)
+    t=t.siguiente
+  t.siguiente=nuevo
+  nuevo.anterior=t
+
+  eliminar(numeroCuenta)
+  if (inicio!=null)
+  inicio=numeroCuenta
+  t=numeroCuenta
+t=t.anterior
+t.siguiente=null
+t.siguiente=numeroCuenta
+
+buscar(numeroCuenta)
+if(inicio!=null)
+t=numeroCuenta
+t=inicio
+t.siguiente=numeroCuenta
+t.anterior=null
+t.anterior=numeroCuenta
+
+listar()
+let res=""; 
+let t=inicio;
+while(t!=null){
+  res+= t.info() + "<br>";
+  t=t.siguiente;
+}
+return res;
