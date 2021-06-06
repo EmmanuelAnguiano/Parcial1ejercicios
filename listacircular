@@ -1,0 +1,78 @@
+class Producto{
+    constructor (nombre, minutos){
+        this.nombre=nombre;
+        this.minutos=minutos;
+        this.siguiente=null;
+        this.anterior=null;
+    }
+    info(){
+        return "<h3>" + this.nombre + "</h3>" +
+               "<p>" + this.minutos
+    }
+}
+
+let Inicio
+
+agregar(nuevo)
+if (inicio == null)
+  inicio=nuevo
+else
+  t=inicio
+  while(t.siguiente!=null)
+    t=t.siguiente
+  t.siguiente=t.siguiente.siguiente
+  nuevo.anterior=inicio
+
+eliminar(Nombre)
+let t=inicio;
+if (this.inicio!=null){
+    if (this.inicio.nombre==Nombre)
+    this.inicio=this.inicio.siguiente;
+    else{
+    let t=this.inicio;
+      while( t.siguiente!=null){
+      if (t.siguiente.nombre==Nombre){
+          t.siguiente=t.siguiente.siguiente;
+          return true;
+      }
+        else
+        t=t.siguiente;
+      }
+      return false;
+  }
+}
+
+
+buscar(Nombre)
+let t=inicio;
+while (t!=null && t.nombre!=Nombre   ){
+    t=t.siguiente;
+}
+return t;
+
+
+
+listar()
+let res=""; 
+let t=inicio;
+while(t!=null){
+  res+= t.info() + "<br>";
+  t=t.siguiente;
+}
+return res;
+
+
+
+
+let d=date.now();
+   recorrido(base,hi,mi,si,hf,mf,sf,hinicio,hfinal)
+   {
+     let bini=this.buscar(base);
+     let recorrido=hfinal
+     if (bini!=null) 
+        temp=bini;
+        while((hf-hi>=0)(mf-mi>=0)(sf-si>=0)){
+            recorrido+= temp.info() + tiempo 
+            temp=temp.siguiente;
+        }
+   }
